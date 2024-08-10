@@ -1,0 +1,68 @@
+body{
+    background-color:rgb(32,33,36);
+    font-family: "Roboto";
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,200px);
+    gap: 10px;
+    margin-top: 50px;
+    grid-auto-flow: dense;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    
+}
+.d1{
+    display: flex;
+    min-height: 20px;
+    min-width: 400px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    transition: height 0.25s ease;
+
+}
+.d1 textarea{
+    background: none;
+    border: none;
+    caret-color: white;
+    color: white;
+    overflow: hidden;
+    width: 70%;
+    resize: none;
+    padding: 8px;
+    transition: 0.25s ease;
+}
+.d1 textarea:focus{
+    border: none;
+    outline: none;
+}
+.d2{
+    min-height: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    transition: height 0.25s ease;
+    overflow-wrap: break-word;
+    position: relative;
+}
+.tick{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: white;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    display: none;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+svg{
+    display: inline;
+}
